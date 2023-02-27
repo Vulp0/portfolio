@@ -1,0 +1,17 @@
+body {
+    background-color: #1c1c1c;
+    color: #FFF;
+    font-family: 'VT323', monospace;
+}
+
+a {
+    color: green;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+.quick-menu {
+    /* background-color:thistle; */
+}
