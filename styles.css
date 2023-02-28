@@ -8,17 +8,30 @@ body {
     font-family: 'VT323', monospace;
 }
 
-a {
+/* a {
     color: green;
 }
 
 a:hover {
     color: greenyellow;
-}
+} */
 
-#who-container {
+#who {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50vh;
+    height: 40vh;
+}
+
+/* #projects {
+    height: 40vh;
+} */
+
+.proj-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.proj-list a {
+    width: fit-content;
 }
