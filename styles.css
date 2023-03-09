@@ -8,6 +8,17 @@ body {
     font-family: 'VT323', monospace;
 }
 
+form input, textarea, button {
+    background-color: #474747;
+    border: none;
+    color: white;
+}
+
+form button:hover {
+    background-color: #5c5c5c;
+}
+
+/* Note to myself: come up with a more interesting color for links */
 /* a {
     color: green;
 }
@@ -20,7 +31,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 40vh;
+    height: 35vh;
 }
 
 /* #projects {
@@ -30,8 +41,18 @@ a:hover {
 .proj-list {
     display: flex;
     flex-direction: column;
+    font-size: 136%;
 }
 
 .proj-list a {
     width: fit-content;
+}
+
+.column-help {
+    flex-direction: column;
+}
+
+#footer p {
+    margin: 0;
+    padding: 0;
 }
