@@ -1,0 +1,130 @@
+@keyframes grad {
+    /* 0% { background-color: #c10000; }
+    18% { background-color: #c15e00; }
+    36% { background-color: #b6c100; }
+    54% { background-color: #03c100; }
+    72% { background-color: #0016c1; }
+    90% { background-color: #7200c1; }
+    100% { background-color: #c10000; } */
+
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    /* background-image: url("noise.png"); */
+    background-image: url("./static-bg-3x.gif");
+    color: black;
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Container {
+    background-color: rgba(0, 75, 0, 0.089);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content {
+    margin: 0 4px;
+    max-width: 940px;
+}
+
+.Top, .Footer {
+    background-color: #252525;
+    color: white;
+    border-radius: 12px;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+}
+
+.Top h2 {
+    margin-bottom: 4px;
+}
+
+.CardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12px;
+    row-gap: 8px;
+    justify-items: center;
+    margin-bottom: 8px;
+}
+
+.CardWrapper {
+    width: 100%;
+    transition: transform 0.1s ease-in;
+    background-color: #252525;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.CardWrapper:hover {
+    transform: scale(1.02);
+}
+
+.Card {
+    min-height: 150px;
+    height: 100%;
+}
+
+/* these are supposed to be for real images for each project card */
+.one { background-image: url("./one.png"); }
+.two { background-image: url("./two.png"); background-position: bottom; }
+.three { background-image: url("./three.png"); background-position: top; }
+.four { background-image: url("./four.png"); background-position: top; }
+.five { background-image: url("./five.png"); }
+/* .six { background-image: url("./six.png"); background-position: bottom; } */
+.six {
+    background-image: linear-gradient(315deg, #0077ff, #9900ff);
+    background-size: 450%;
+
+    animation-name: grad;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.TextContent {
+    top: 0;
+}
+
+.Title, .Desc {
+    padding: 4px 12px;
+    color: rgb(209, 209, 209);
+    text-shadow: 0 0 10px black;
+}
+
+.Title {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 4px;
+    border-radius: 12px 12px 0 0;
+}
+
+.Desc {
+    font-weight: bold;
+}
+
+.ExtraLink {
+    color: #8f8ffc;
+}
+
+.ExtraLink:hover {
+    cursor: pointer;
+    color: #fafc8f;
+}
